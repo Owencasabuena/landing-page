@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background: #1F2937;
+    --main-text-size: 48px;
+    --main-text-color: #F9FAF8;
+    --main-text-weight: 900;
+    --secondary-text-size: 18px;
+    --secondary-text-color: #E5E7EB;
+    --header-link-text-size: 18px;
+    --header-link-text-color: #E5E7EB;
+    --header-logo-text-size: 24px;
+    --header-logo-text-color: #f9faf8;
+    --button-color: #3882f6;
+    --cta-background-color: #3882f6;
+    --info-header-text-size: 36px;
+    --info-header-text-color: #1f2937;
+    --info-header-text-weight: 900;
+    --quote-background: #e5e7eb;
+    --quote-text-size: 36px;
+    --quote-text-color: #1f2937;
+}
+
+* {
+    font-family: "Roboto", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background);
+    padding: 20px;
+}
+
+.left-side a{
+    font-size: var(--header-logo-text-size);
+    color: var(--header-logo-text-color);
+    text-decoration: none;
+}
+
+.right-side {
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: var(--header-link-text-size);
+        color: var(--header-link-text-color);
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    padding: 50px;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: var(--main-text-size);
+        font-weight: var(--main-text-weight);
+        color: var(--main-text-color);
+    }
+
+    p {
+        font-size: var(--secondary-text-size);
+        color: var(--secondary-text-color);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--main-text-color);
+        background-color: var(--button-color);
+        padding: 5px 20px;
+        border-radius: 12px;
+        max-width: 100px;
+        margin: 10px 0px;
+    }
+}
+
+.image img {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    padding: 10px;
+}
+
+.header h1{
+    text-align: center;
+    font-size: var(--info-header-text-size);
+    font-weight: var(--info-header-text-weight);
+    color: var(--info-header-text-color);
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    margin-bottom: 70px;
+}
+
+.item {
+    width: 200px;
+    text-wrap: 200px;
+    text-align: center;
+
+    img {
+        max-width: 150px;
+        max-height: 150px;
+        border: var(--cta-background-color);
+        border-style: solid;
+        border-radius: 12px;
+    }
+}
+
+.qoute {
+    background-color: var(--quote-background);
+    color: var(--quote-text-color);
+    font-size: var(--quote-text-size);
+    font-style: italic;
+    font-weight: 250;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 270px;
+
+    .qoute-author {
+        margin-left: auto;
+        font-size: var(--secondary-text-size);
+        font-weight: bold;
+    }
+}
+
+.cta {
+    margin: 80px 150px;
+    display: flex;
+    background-color: var(--cta-background-color);
+    padding: 50px;
+    border-radius: 1em;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+
+    .cta-header {
+        font-weight: 600;
+        font-size: 25px;
+        
+    }
+
+    .cta-secondarytext {
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        border: solid;
+        padding: 5px 25px;
+        border-color: white;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+}
+
+footer {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 350;
+    padding: 40px;
+}
